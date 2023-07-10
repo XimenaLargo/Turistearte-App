@@ -1,0 +1,30 @@
+
+.button-enviar{
+    width: fit-content;
+}
+
+.modal-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.modal.show .modal-dialog {
+    margin-top: 150px;
+}
+
+button[type=submit] {
+    margin-bottom: 2rem;
+}
+
+.modal-content {
+    background-color: #e9f5fd;
+}
+.header-rol{
+    background-color: var(--ligth-blue-header);
+}
+.title-users{
+    color: var(--dark-blue);
+}
+label .user{
+    font-size: 1rem;
+}

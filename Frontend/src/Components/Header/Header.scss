@@ -1,0 +1,153 @@
+.header {
+  background-color: #159ec4;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.7rem 2rem;
+  z-index: 100;
+  box-shadow: 0px 0px 6px #303030;
+  height: 70px;
+  
+  h1{
+    font-size: 1.2rem;
+    font-family: Mallanna, sans-serif;
+
+  }
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo img {
+  height: 120px;
+  padding-top: 25%;
+  margin-right: 0.5rem;
+}
+
+.header__logo-text {
+  font-size: 1.3rem;
+  margin: 0;
+  letter-spacing: 4px;
+}
+
+.header__buttons {
+  display: flex;
+  margin-right: 30px;
+}
+
+.header__button {
+  background-color: #B7FF87;
+  border: none;
+  color: #08404F;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  width: 134px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  transition: background-color 700ms;
+}
+
+.header__button--create-account {
+  background-color: #27B5E6;
+}
+
+.header__button--create-account:hover {
+  background-color: #0D8BB9;
+}
+
+.header__button--login {
+  color: #08404F;
+}
+
+.header__button--login:hover {
+  background-color: #4fac11;
+  color: #08404F;
+}
+
+.header__menu {
+  display: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.header__menu svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: white;
+}
+
+
+
+.header__buttons--closed {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+@media screen and (max-width: 768px) {
+  .header{
+    padding: 1rem;
+  }
+  .header__buttons--closed {
+    display: none;
+  }
+
+  .header__buttons {
+    display: none;
+
+  }
+  .header_logo{
+    flex:1;
+    margin-left: 10%;
+  }
+  .header__logo img {
+    height: 50px;
+margin: auto;
+  }
+  .header__logo-text {
+    font-size: 1rem;
+  }
+  .header__menu{
+    display: flex;
+    margin-right: 5%;
+  }
+  .header__buttons--open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: var(--form-background);
+    padding: 1rem;
+    align-items: flex-end;
+
+
+  }
+  .header__button--create-account{
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header{
+width:100%;
+padding: 0.5rem;
+ .header__logo-text{
+  font-size: 1rem; 
+  letter-spacing: 3px;
+ }
+
+.header__menu {
+  margin-right: 0;
+}
+}
+}

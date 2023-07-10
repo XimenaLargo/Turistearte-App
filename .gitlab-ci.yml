@@ -1,0 +1,84 @@
+stages:
+  - install
+  - frontend
+  - deploy
+
+install_dependencies:
+  stage: install
+  image: node:latest
+  script:
+    - apt-get update && apt-get install -y curl
+    - curl -sL https://deb.nodesource.com/setup_14.x | bash -
+    - apt-get install -y nodejs
+    - npm install -g npm
+  rules:
+    - changes:
+        - Frontend/**/*
+
+    
+frontend_build:
+  stage: frontend
+  image: node:lts
+  script:
+    - echo "Compilación del frontend..."
+    - cd Frontend
+    - npm install
+    - npm run build
+    - echo "Compilación del frontend terminada."
+    - cd dist
+    - ls
+    - cd ..
+    - pwd
+  artifacts:
+    name: frontend_build
+    paths:
+      - Frontend/dist
+  rules:
+    - changes:
+        - Frontend/**/*
+
+backend_deploy:
+  stage: deploy
+  image: maven:latest
+  before_script:
+    - apt-get update && apt-get install -y openssh-client
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - touch ~/.ssh/config
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - echo "Compilacion y deploy del backend..."
+    - cd Backend
+    - mvn clean install
+    - echo "Backend compilado correctamente."
+    - echo "Deploy del backend..."
+    - ssh ${SSH_USER}@${SSH_HOST} "sudo systemctl stop myapp.service"
+    - scp -r target/*.jar ${SSH_USER}@${SSH_HOST}:~/
+    - ssh ${SSH_USER}@${SSH_HOST} "sudo systemctl start myapp.service"
+    - echo "Deploy del Backend completado."
+  rules:
+    - changes:
+        - BackEnd/**/*
+
+frontend_deploy:
+  stage: deploy
+  needs: [frontend_build]
+  image: python:latest
+  script:
+    - echo "Sincronizacion del frontend con S3..."
+    - echo "Verificación del directorio Frontend/dist:"
+    - ls Frontend/dist
+    - pip install awscli
+    - aws configure set aws_secret_key_id $AWS_ACCESS_KEY_ID
+    - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+    - aws s3 sync --delete Frontend/dist s3://$BUCKET_NAME
+    - echo "Deploy del Frontend en S3 completado."
+  rules:
+    - changes:
+        - Frontend/**/*
+
+    

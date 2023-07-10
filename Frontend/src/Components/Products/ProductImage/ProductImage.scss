@@ -1,0 +1,72 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.contenedor {
+	width: 100%;
+	margin: auto;
+	padding: 1rem;
+	display: flex;
+	gap: 20px;
+	height: 50vh;
+	&-banner {
+		border-radius: 20px;
+		text-align: center;
+		padding: 20px;
+		background-size: cover;
+		background-position: center center;
+		width: 90%;
+	}
+
+	&-otros {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+	
+		&-card {
+			border-radius: 10px;
+			padding: 20px;
+			position: relative;
+			overflow: hidden;
+			background-size: cover;
+			background-position: center center;
+			width: 45%;
+			display: flex;
+			justify-content: flex-end;
+			align-items:flex-end;
+		
+			&-p{
+				color: white;
+		
+				position: relative;
+				font-size: 20px;
+				font-weight: bold;
+			}
+		
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 768px) {
+	.cardDetail-product{
+		width:98%
+	}
+	.contenedor{
+		justify-content:center;
+		height: 30vh;
+		padding: 0;
+		&-banner{
+			padding:0.5rem
+		}
+		&-otros{
+			display:none
+		}
+	}
+	
+}
+

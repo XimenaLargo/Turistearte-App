@@ -1,0 +1,35 @@
+footer {
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 0.8rem;
+    text-align: left;
+    z-index: 2;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.left-block {
+    display: flex;
+    align-items: center;
+}
+
+.left-block img {
+    width: 40px;
+    /* Ajusta el tamaño según tus necesidades */
+    margin-right: 10px;
+}
+
+.footer-wrapper {
+
+    display: flex;
+    background-color: #0E7E9C;
+    color: #f9f7f7;
+}

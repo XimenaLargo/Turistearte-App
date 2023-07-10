@@ -1,0 +1,13 @@
+  .primary-text {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    max-width: 500px;
+    color: #6a6a6a;
+    text-align: center;
+  }
+  
+  .primary-subheading {
+    color: #4fa8bc;
+    /* line-height: 5rem; */
+    max-width: 90px;
+    padding: 8rem 0rem;
+  }

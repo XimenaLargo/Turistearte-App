@@ -1,0 +1,152 @@
+.login-body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url('../login2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.h1-body {
+    width: 40%;
+    height: 65vh;
+    text-align: left;
+    h1 {
+        padding-top: 10rem;
+        font-weight: 800;
+        color: rgb(255, 255, 255);
+    }
+
+}
+.ta-form-title {
+    color: white;
+    margin-top: 4rem;
+    font-size: 1.5rem;
+}
+
+.login-container {
+    background-color: var(--form-background);
+    width: 30%;
+    margin: 2rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    height: 75%;
+    padding-bottom: 2rem;
+    margin-top: 0;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 2rem;
+  
+    .inputs-login {
+        width: 85% !important;
+        color: var(-dark-blue);
+    }
+    
+    .button-comenzar {
+        background-color: var(--apple-green);
+        color: white;
+        border-radius: 20px;
+        width: 80%;
+        margin-top: 1rem;
+    
+}
+
+.button-comenzar:hover{
+    background-color: rgb(23, 78, 105);
+    color:aliceblue
+
+}
+    
+    .link-registrarse {
+        width: 80%;
+        margin-top: 1rem;
+        .button-registrarse {
+            background-color: #2C2269;
+            color: white;
+            border-radius: 20px;
+            width: 100%;
+            :hover{
+                background-color: rgb(76, 106, 125);
+
+            }
+        
+        }
+    }
+    
+    
+}
+
+
+
+
+.error {
+    color: var(--error);
+    font-size: 16px;
+}
+
+.button-comenzar:hover {
+    background-color: rgb(59, 64, 67);
+}
+
+
+@media screen and (max-width: 768px) {
+    .login-body {
+        flex-direction: column;
+        background-position: center;
+
+        .h1-body{
+        width: 90%;
+        height: auto;
+        h1{
+            padding: 0;
+            font-weight: 600;
+        }
+        }
+        .login-container{
+            width: 80%;
+        }
+        }
+    
+
+}
+
+@media screen and (max-width: 480px) {
+    .login-body {
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 80vh;
+        .h1-body h1{
+            display: none;
+        
+        }
+        .login-container{
+            width: 90%;
+            padding-bottom: 1rem;
+            height: 80%;
+            .form-login{
+                margin: 0;
+                justify-content: space-evenly;
+                .ta-form-title{
+                    padding: 0;
+                }
+                .button-comenzar{
+                    margin-top: 0;
+                }
+                .link-registrarse{
+                    margin-top: 0;
+                .button-registrarse{
+                    margin: 0rem !important;
+                }}
+            }
+        }
+        }
+}

@@ -1,0 +1,35 @@
+main .form-container > button{
+    background-color: #bdf188;
+    color: #08404f;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    width: auto;
+    height: 40px;
+    margin: 50px 0;
+}
+
+.table-active {
+    background-color: #329bb8;
+}
+
+table{
+    display: table;
+    margin: auto auto 100px;
+ 
+}
+td,th {
+    text-align: left;
+    padding: 5px;
+    width: 150px;
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    td,th {
+        font-size: 0.9rem;
+    }
+  }

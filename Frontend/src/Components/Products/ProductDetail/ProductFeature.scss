@@ -1,0 +1,22 @@
+
+.ta-tour-features {
+    .ta-features-container {
+      display: flex;
+      flex-wrap: wrap;
+       .ta-svg-container {
+         width: 50%;
+         @media (max-width: 768px) {
+            width: 100%;
+            font-size:1.02rem
+         }
+
+          &:not(:last-child) {
+             margin-bottom: .8rem;
+          }
+
+          svg path {
+             fill: var(--color-primary);
+          }
+       }
+    }
+ }

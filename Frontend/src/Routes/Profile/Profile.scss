@@ -1,0 +1,25 @@
+
+.ta-avatar-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+.ta-avatar-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #71c535c2;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.user-name{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--ligth-blue-primary);
+}
+.profile-data{
+    margin-top: 50px;
+}

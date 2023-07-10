@@ -1,0 +1,90 @@
+.col {
+    width: 200px;
+    margin-top: 50px;
+
+}
+
+.Card-section-top {
+    font-size: 30px;
+    color: var(--ligth-blue);
+}
+
+.section-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.section-info {
+    width: 350px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #535353;
+    margin: 0rem 2rem;
+    background-size: cover;
+    border-radius: 15px;
+ 
+    transition: all 400ms;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.section-info:hover {
+   transform: translate(5px, - 5px);
+   box-shadow: 4px 4px 4px 4px rgba(108, 107, 107, 0.25);
+}
+
+.section-info img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.section-info h3 {
+    position: absolute;
+    margin: 0;
+    padding: 0.5rem 0 0;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 70px;
+    width: 350px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .Card-section-top {
+        font-size: 1.5rem;
+        margin-top: 0;
+
+    }
+    .section-info{
+        margin: 0;
+        width: 300px;
+
+    }
+
+    .col {
+        padding-left: 100px;
+        margin-top: 30px;
+        width: 300px;
+    }
+
+    .card-body {
+        width: 300px;
+        margin-top: 50px;
+    }
+    .section-bottom{
+        margin-top: 0;
+    }
+}
+

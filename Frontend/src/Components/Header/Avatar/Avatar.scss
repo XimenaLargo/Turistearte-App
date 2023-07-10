@@ -1,0 +1,54 @@
+.ta-avatar {
+
+    display: flex;
+    align-items: center;
+
+    &-initials {
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-big);
+        line-height: 25px;
+        text-align: center;
+        color: var(--white);
+        background-color: var(--apple-green);
+        border-radius: 40%;
+        padding: 8px;
+        letter-spacing: -2px;
+        margin: 0.5rem;
+        padding:1rem;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    &-name {
+        font-family: "Reem Kufi";
+        font-style: normal;
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-medium);
+        line-height: 19px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+
+        & span:first-child {
+            opacity: 0.5;
+        }
+    }
+
+    & svg {
+        position: relative;
+
+        &:hover {
+            cursor: pointer;
+
+           
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ta-avatar-name{
+        display:none
+    }
+    
+}

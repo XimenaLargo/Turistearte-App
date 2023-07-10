@@ -1,0 +1,24 @@
+.mapa{
+    width: 1500px;
+    height: 560px;
+    z-index: 1;
+}
+.superContainer-map{
+    justify-content: center;
+    display: grid;
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 390px){
+    .mapa{
+        width: 100px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 844px) {
+    .mapa{
+        width: 100vw;
+        height: 200px;
+    }
+}

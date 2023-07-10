@@ -1,0 +1,16 @@
+.ta-svg-container {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    font-size: 120%;
+    color: var(--ligth-blue-primary);
+   
+    
+    .label {
+       margin-left: .5rem;
+       text-transform: capitalize;
+       font-size: 1rem;
+       color: grey;
+      
+    }
+ }

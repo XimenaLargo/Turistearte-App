@@ -1,0 +1,80 @@
+.ta-side-panel {
+    position: fixed;
+    width: 60%;
+    inset: 0;
+    left: 40%;
+    height: 100vh;
+    background-color: rgb(249, 249, 249);
+    translate: 100%;
+    display: block;
+
+    
+
+    .NavButton {
+      position: fixed;
+      left: 45%;
+      background-color: #139c3c;
+      color: #fcfcfc;
+      border: none;
+      border-radius: 50px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+
+      &:hover {
+         background-color: #a14318;
+       color: #fff;
+       }
+    }
+    
+ 
+
+ 
+    &-header {
+       padding: 10px 0 0 5px;
+       height: 100px;
+       background-color: var(--ligth-blue-primary);
+       color: var(--white);
+ 
+       h2 {
+          position: absolute;
+          right: 10px;
+          top: 55px;
+          padding: 0
+       }
+ 
+       svg path {
+          fill: var(--white);
+          top:0;
+          left:0
+       }
+    }
+ 
+    &-options {
+       &-item {
+          font-family: 'Roboto Bold';
+          font-weight: var(--font-weight-bold);
+          font-size: var(--font-size-medium);
+          line-height: 19px;
+          margin: 16px;
+          text-align: right;
+          padding-bottom: 16px;
+          border-bottom: 1px solid var( --dark-blue);
+          color:rgb(70, 69, 69);
+ 
+          &:hover {
+             cursor: pointer;
+             color: #0c7f27;
+          }
+          &-logout{
+            color:var(--error)
+          }
+       }
+ 
+       a:last-child {
+          .ta-side-panel-options-item {
+             border-bottom: none;
+             
+          }
+       }
+    }
+ }

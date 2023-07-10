@@ -1,0 +1,135 @@
+*:root {
+  --white-color: #fff;
+  --blue-color: #b0fac7;
+  --grey-color: #707070;
+  --grey-color-light: #3364ad;
+}
+
+.sidebarMenu {
+  position: fixed;
+  inset: 0;
+  top: 0;
+  left: -18%;
+  height: 100%;
+  width: 22%;
+  padding: 10px 20px;
+  background-color: var(--white-color);
+  box-shadow: 0 0 1px var(--grey-color-light);
+  translate: 70%;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.menu-buttom {
+  display: none;
+}
+
+.menu_title {
+  margin: 15px 0;
+  padding: 5px 5px;
+  font-size: 30;
+}
+
+.menu_title::before {
+  color: #0c7f9f;
+  white-space: nowrap;
+
+}
+
+.sidebarMenu .list-items li {
+  padding-left: 0px;
+  line-height: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+.menu_administracion::before {
+  content: "Administracion";
+}
+
+.menu_lista::before {
+  content: "Categorias";
+}
+
+.menu_tours::before {
+  content: "Tours";
+}
+
+.menu_city::before {
+  content: "Ciudades";
+
+}
+
+.sideBar .nav-menu-items {
+  flex-direction: column;
+  height: 50px;
+  display: flex;
+  margin-top: 80px;
+  text-align: left;
+
+}
+
+.sideBar .menu-item:hover,
+.sideBar .menu-item.is-active {
+  padding: 4px 10px;
+  border-radius: 10px;
+  color: var(--grey-color);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.sideBar .nav-menu-items .menu-item:hover {
+  color: white;
+  background-color: #85d19b;
+}
+
+@media screen and (max-width: 900px) {
+  .sidebarMenu {
+    left: -23%;
+    width: 25%;
+
+
+  }
+}
+@media screen and (max-width: 780px) {
+  .sidebarMenu {
+    display: flex;
+    flex-flow: column;
+    justify-content: right;
+    opacity: 0;
+    height: 0vh;
+    align-items: center;
+
+  }
+  .disabled{
+    display: none;
+  }
+
+  .sidebarMenu.isActive {
+
+    height: 90vh;
+    opacity: 2;
+    width: 60%;
+    translate: 15%;
+    z-index: 2;
+  }
+
+  .menu-buttom {
+    display: block;
+    margin-left: auto;
+  }
+  .header-side-bar{
+    width: 100vw;
+    padding-right: 20px;
+    margin-right: 0;
+  }
+  
+  }
+
+@media screen and (max-width: 480px) {
+  .sidebarMenu{
+    left: -10%;
+    width: 25%;
+  }
+}

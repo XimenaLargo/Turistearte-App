@@ -1,0 +1,33 @@
+.Presentacioncontainer{
+    display: flex;
+    width: 100%;
+    
+   
+}
+.content-admin{
+    width: 100%;
+    right: 0;
+    padding: 0;
+}
+.intro{
+    position: relative;
+    margin-top: 20vh;
+  
+}
+
+.adminTitle{
+    color: var(--dark-blue);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.adminText {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .content-admin{
+        width: 100%;
+        padding: 10px;
+    }
+  }

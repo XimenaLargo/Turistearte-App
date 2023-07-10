@@ -1,0 +1,142 @@
+.register-bg {
+   background-image: url('../registrar.svg');
+   height: 90vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.superContainer {
+   /*background-color: #e9e9e9;*/
+   width: 100%;
+   /*border-radius: 50px;*/
+   max-width: 1900px;
+   display: flex;
+   flex-direction: column;
+   /*height: 70%;*/
+   align-items: center;
+   justify-content: space-evenly;
+   .form-register{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 90%;
+      height: 70%;
+      .inputs-login {
+         width: 80% !important
+     }
+
+     .ta-form-Registrar {
+      color: rgb(53, 56, 59);
+     
+   
+     }
+
+     .button-comenzar {
+      background-color: var(--apple-green);
+      color: white;
+      border-radius: 20px;
+      width: 50%;
+  }
+
+  .button-comenzar:hover{
+   background-color: rgb(23, 78, 105);
+   color:aliceblue;
+  }
+   }
+}
+
+.register-name-surname {
+   display: flex;
+   justify-content: space-between;
+   width: 90%;
+   align-items: baseline;
+   color: rgb(240, 240, 240);
+
+   &-internal {
+      width: 100%;
+
+      &-email {
+         width: 92%;
+         color: rgb(238, 240, 241);
+      }
+      
+   }
+}
+
+.register-name-surname{
+   p{
+      font-size: 15px;
+      text-align: center;
+      margin: 5px 0px 5px 0px;
+   }
+}
+
+.input-register {
+   width: 95% !important;
+}
+
+.error {
+   color: var(--error);
+   font-size: 16px;
+   margin-bottom: 10px;
+}
+
+
+.button-comenzar-registro {
+   background-color: var(--apple-green);
+   color: white;
+   width: 60%;
+   margin-top: 50px;
+}
+
+@media screen and (max-width:768px){
+   .superContainer {
+      width: 75%;
+      height: 60vh;
+      .form-register{
+         width: 100%;
+         font-size: 1rem !important;
+         padding: 0.5rem !important;
+         .input-register{
+            padding: 0.3rem;
+            font-size: 0.9rem;
+         }
+      }
+   }
+}
+@media screen and (max-width: 480px) {
+   .register-bg{
+      height: 90svh;
+      align-items: flex-start;
+   }
+   .superContainer {
+      margin-top: 1rem;
+      width: 90%;
+      height: 75vh;
+      justify-content: space-around;
+      .form-register{
+         height: 100%;
+      }  
+   }
+
+   .register-name-surname {
+      flex-direction: column;
+      p{
+         font-size: 0.7rem;
+      }
+
+      &-internal-email {
+         width: 90%;
+      }
+   }
+
+   .input-register {
+      width: 100% !important;
+   }
+}

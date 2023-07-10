@@ -1,0 +1,33 @@
+.tourScore {
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 100%;
+    background: var(--ligth-blue-primary);
+    z-index: 1;
+    padding: 1rem 1rem 2rem 2rem;
+
+}
+
+.scoreNumber {
+    background: var(--ligth-blue-primary);
+    color: var(--white);
+    font-size: 30px;
+
+}
+
+.tourStars {
+    color: rgb(210, 210, 50);
+    font-size: 1.5rem;
+}
+
+@media (max-width:768px) {
+    .tourScore {
+        padding: 0 0 0.5rem 0.5rem ;
+        .scoreNumber {
+            font-size: 1rem;
+        }
+        .tourStars {
+            font-size: 1rem;
+        }
+    }
+}

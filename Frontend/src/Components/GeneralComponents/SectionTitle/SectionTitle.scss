@@ -1,0 +1,16 @@
+.ta-section-title {
+    color: var( --ligth-blue-primary);
+    font-size: 1.7rem;
+    padding-bottom: 0.5rem;
+    text-align: left;
+ }
+ 
+ .with-underline {
+    border-bottom: 2px dotted rgb(176, 176, 176);
+ }
+
+ @media (max-width: 768px) {
+   .ta-section-title {
+      font-size: 1.2rem;
+   }
+ }

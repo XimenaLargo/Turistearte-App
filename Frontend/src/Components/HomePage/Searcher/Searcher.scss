@@ -1,0 +1,156 @@
+.home-banner-container {
+  background-position: center center;
+  width: 100%;
+  height: 50%;
+  background-image: url('https://res.cloudinary.com/dvun7eeq1/image/upload/v1687375756/image_w6nzd5.jpg');
+  background-size: cover;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primary-heading {
+  font-size: clamp(0rem, 4vw, 3rem);
+  font-weight: bold;
+  color: #ffffffd1;
+  max-width: 800px;
+  margin: 70px 0;
+}
+
+.btnSearch {
+  background-color: var( --apple-green);
+  border: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  width: 300px;
+  height: 40px;
+  margin: 20px;
+ 
+}
+
+.btnSearch:hover{
+  background-color: rgb(56, 138, 154);
+  color: white;
+}
+
+.buscador {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffffff;
+  width: 100vw;
+  padding: 15px 30px;
+  margin-bottom: 80px;
+  background-color:var( --form-background);
+  border-radius: 20px;
+  width: 70%;
+  .input-group{
+    margin: 1px 5px !important;
+    border-radius: 10px;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+
+    &-btn{
+      flex-shrink: 4;
+    .btnSearch{
+      margin: 0;
+      padding: 0;
+      width: 100px;
+    }}
+  }
+  .input-group-text{
+    color: rgb(22, 139, 160);
+  
+  }
+  .form-control{
+    padding: 2px;
+    .form-select{
+      padding: 3px !important;
+      border: 0 !important
+    }
+  }
+  
+}
+
+
+
+
+
+.react-datepicker-wrapper{
+  margin-right: 20px;
+  height: 0%;
+  width: 100%;
+}
+.react-datepicker__input-container{
+  height: 0%;
+}
+
+@media screen and (max-width: 768px) {
+  .home-banner-container {
+    width: 100vw;
+    padding: 0;
+  }
+
+  .primary-heading {
+    font-size: clamp(3rem, 5vw, 4rem);
+    font-weight: bold;
+    max-width: 60vw;
+    margin: 100px 0 10px 0;
+  }
+
+  .buscador {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #a1a1a1;
+    width: 90%;
+    padding: 50px 10px;
+    margin: 20px 0;
+
+    .input-group{
+      width: 90%;
+      &-btn{
+        flex-shrink: 4;
+      }
+    }
+  }
+
+  .input-form {
+    margin: 20px;
+    border-radius: 20px;
+    width: 5vw;
+    height: 40px;
+  }
+
+
+  .react-datepicker-wrapper{
+    margin-right: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .home-banner-container {
+    padding: 0;
+    width: 100%;
+    .primary-heading{
+      font-size:2rem
+    }
+  }
+  .buscador {
+    display: flex;
+    flex-wrap: wrap;
+    color: #a1a1a1;
+
+    width: auto;
+    padding: 20px 10px;
+    margin: 20px 0;
+    height: 200px;
+  }
+
+}

@@ -1,0 +1,189 @@
+.cardContainer {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 8px 8px;
+  /* height: 491px; ver */
+  padding: 1rem;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 380px;
+}
+
+.tourImageContainer {
+  position: relative;
+  
+}
+.tourInformation {
+  display: flex;
+  flex-direction: row;
+}
+.tourImage {
+  width: 100%;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 200px; /* ver */
+  object-fit: cover;
+  user-select: none;
+}
+
+.tourFavorite {
+  color: red;
+  position: absolute;
+  right: 0;
+  width: 21px;
+  height: 19px;
+  margin: 15px 12px;
+}
+
+
+.cardDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tourInitialContainer {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  flex: 1;
+}
+
+.tourCategoryContainer {
+  display: flex;
+  text-transform: uppercase;
+}
+
+.tourCategory {
+  opacity: 0.5;
+}
+
+.tourStars {
+  color: rgb(210, 210, 50);
+  font-size: 0.8rem;
+}
+.tourname {
+  font-size: 1rem;
+}
+
+.tourScore {
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 100%;
+  background: var(--ligth-blue-primary);
+  z-index: 1;
+  padding: 0.4375rem 1rem 1.0625rem 1rem;
+  align-self: baseline;
+}
+
+/*.scoreText {
+  margin: 0;
+  color: white;
+}*/
+
+.scoreNumber {
+ 
+  width: 34px;
+  background: var(--ligth-blue-primary);
+  color: var(--white);
+  font-size: 15px;
+
+}
+
+.tourTitle {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--dark-blue);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-align: left;
+}
+
+.tourLocation {
+  max-height: 17px;
+  overflow: hidden;
+}
+
+.linkLocation {
+  color: var(--dark-blue);
+  text-transform: uppercase;
+}
+
+.propertyHighlights {
+  display: none;
+}
+
+.tourDescription {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  height: 68px;
+}
+
+@media (min-width: 768px) {
+  .cardContainer {
+    max-width: 710px;
+    height: 283px;
+    border-radius: 5px;
+    display: flex;
+    padding: 10px 15px 10px 0;
+    gap: 22px;
+    margin: 1rem;
+  }
+  .cardDetails {
+    padding: 0;
+    flex: 1 1;
+    gap: 21px;
+  }
+
+  .tourImage {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    width: 300px;
+  }
+  .tourname {
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+
+  .propertyHighlights {
+    display: block;
+    font-size: 22px;
+    display: flex;
+    align-items: flex-end;
+    height: 24px;
+    gap: 10px;
+    margin-top: 7px;
+  }
+}
+
+@media (min-width: 1333px) {
+  .cardContainer {
+    max-width: 900px;
+    padding: 0;
+    gap: 0;
+    margin: 30px;
+  }
+  .cardDetails {
+    padding: 20px 10px 13px 15px;
+    gap: 10px;
+  }
+  .tourImage {
+    border-radius: 5px;
+  }
+}

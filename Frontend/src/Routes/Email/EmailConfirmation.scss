@@ -1,0 +1,49 @@
+.mensajeValido{
+    color: #2C2269;
+    font-weight: bold;
+    font-size: 55px;
+   
+}
+.checkIcon{
+    color: #3AA859;
+    font-size: 150px;
+    padding-bottom: 50px;
+}
+.validContainer{
+    margin-top: 150px;
+}
+
+.textContainer{
+    h4{
+        color: #343434;
+        margin-bottom: 20px;
+    }
+    margin-top: 100px;
+}
+
+.buttonValid{
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.inicio{
+    background-color: #27b6e6b8;
+    margin-right: 2rem;
+}
+
+.iniciarSesion{
+    background-color: #B7FF87;
+}
+
+@media screen and (max-width: 480px) {
+    .container-email-confirmation{
+    margin-bottom: 5rem;
+    .mensajeValido{
+        font-size: 2rem;
+    }
+    }
+    .buttonValid{
+        margin:1rem
+    }
+
+}
