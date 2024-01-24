@@ -1,10 +1,10 @@
 # Turistearte
 
-### ✨Acerca de nuestro proyecto
+### ✨About the project
 
-Turisterte es la aplicación desarrollada por el equipo 7 del proyecto integrador de la carrera Ceritified Tech Developer de Digital House, el cuál fue desarrollado aplicando los conocimientos adquiridos durante la carrera y durante el desarrollo del mismo, fue un reto desafiante y muy enriquecedor del cual nos sentimos muy orgullosos. A continuación se listan las herramientas utilizadas para el desarroollo Frontend, Backend, diseño de la base de datos y recursos necesarios para el despliegue de la aplicacion en AWS.
+Turistearte is an experience booking project through a web application developed with Java, Spring, React, MySQL, Bootstrap and AWS that allows users with user role to search, book and rate a tourist experience and those who have admin role, to create, update and delete such experiences being a complete system for the management of a tourism enterprise. Developed by the Turistearte team of the Certified Tech Developer course, formed by:
 
-## Equipo - Integrantes
+## Turistearte team 👩‍💻
  - Sofia Lazetera
  - Marysol Kim
  - Lorena Montaldo
@@ -13,16 +13,16 @@ Turisterte es la aplicación desarrollada por el equipo 7 del proyecto integrado
  - Adrian Olmos
  - Ximena Largo
 
-## 🎨 Requerimientos del Frontend
-### 🖌 Herramientas 
+## 🎨 Frontend Requirements
+### 🖌 tools 
  - React
  - Sass
  - React-Bootstrap
  - Vite
  - Node
 
-## ⚙ Requerimientos del Backend & Base de datos
-### 🔧 Herramientas 
+## ⚙ Backend & Database Requirements
+### 🔧 tools 
  - Java 17
  - Spring
  - Maven 4.0.0
@@ -30,11 +30,13 @@ Turisterte es la aplicación desarrollada por el equipo 7 del proyecto integrado
  - MySQL
  - MySQL Workbench
 
-### Diseño de la base de datos 
+### Database design 
+<p align="center">
 <img src="https://github.com/XimenaLargo96/XimenaLargo96/blob/main/publicImages/DER.PNG?raw=true" width="500px" heigth="500px"/>
+</p>
 
-## 🏗 Requerimientos de Infraestructura
-### 🔨 Herramientas 
+## 🏗 Infrastructure Requirements
+### 🔨 tools 
  - GitLab CI/CD
  - AWS Bucket S3
  - AWS EC2
@@ -42,5 +44,6 @@ Turisterte es la aplicación desarrollada por el equipo 7 del proyecto integrado
 
 
 - Demo
+<p align="center">
 <img src="https://github.com/XimenaLargo96/XimenaLargo96/blob/main/publicImages/demo-turistearte.gif?raw=true" />
-
+</p>
