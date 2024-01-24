@@ -42,6 +42,17 @@ Turistearte is an experience booking project through a web application developed
  - AWS EC2
  - AWS RDS
 
+## How to execute? 🚀
+Before you begin you must have AWS credentials and an RDS database deployed and an email configured with the Gmail SMTP server for this project.
+
+1. Clone this repository
+```
+https://github.com/XimenaLargo96/Turistearte-App.git
+```
+2. Replace in the application.properties file the AWS credentials and the email and password that you want to use.
+   
+3. (optional) If you have a GitLab account and want to perform automatic deployment, set the environment variables to replace the credentials. The .gitlab-ci.yml file contains the script for automatic deployment, keeping in mind that you must have an EC2 machine on AWS running the Linux operating system.
+   
 
 - Demo
 <p align="center">
